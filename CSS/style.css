@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+  height: 100vh;
   margin: 0;
+  padding: 0;
   background-color: #eee;
 }
 body::-webkit-scrollbar{
@@ -40,35 +45,70 @@ body::-webkit-scrollbar{
   color: #000!important;
 }
 .col-sm-9{
-  margin: 0 auto 0 auto;
-  width: 30rem;
+  width: 30rem!important;
   height: 30rem;
-  background-color: red;
   display: flex;
+  border-radius: 30px;
+  background-color: #e7e7e7;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 .col-sm-9::-webkit-scrollbar{
   display: none;
 }
-.col-sm-9 div{
+.col-sm-9 > div{
   min-width: 30rem;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 10rem;
-  color: red;
-  border-radius: 30px;
   scroll-snap-align: center;
 }
-.box1{
-  background-color: yellow;
+.acc-name, .acc-book{
+  height: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.box2{
-  background-color: pink;
+.acc-name > h4 {
+  color: #3a3a3a;
+  position: relative;
+  font-size: 20px;
+  font-family: 'Times New Roman', 'Times', sans-serif;
 }
-.box3{
-  background-color: green;
+.acc-book > a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  background-color: #354657;
+  position: relative;
+  font-size: 20px;
+  font-family: 'Times New Roman', 'Times', sans-serif;
+}
+.acc-book > a:hover{
+  background-color: #354646;
+}
+.acc-img{/*
+  height: 50%;*/
+  width: 18rem;
+  position: relative;
+}
+.acc-img > img{
+  width: 18rem;
+}
+.acc-inf{
+  width: 18rem;/*
+  height: 28%;*/
+  position: relative;
+}
+.acc-inf p {
+  font-size: 15px;
+  color: #3a3a3a;
+  text-align: center;
+  font-family: 'Times New Roman', 'Times', sans-serif;
 }
 .lds-ellipsis {
   display: inline-block;
@@ -132,7 +172,7 @@ nav > li {
   background-image: url("https://stories.isu.pub/57061889/images/15_original_file_I0.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height: 600px;
+  height: 100vh;
 }
 .fakeimg {
   height: 250px;
@@ -149,7 +189,7 @@ nav > li {
   background-size: cover;
 }
 .bgimg {
-  background-image: url("https://dwu32cgxelq1c.cloudfront.net/local_newspapers/sites/68/2017/07/ThavhaniMallentra_48528.jpg");
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/22/64/cd/a8/chesanyama.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 530px;
