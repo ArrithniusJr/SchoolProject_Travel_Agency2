@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#content{
+  display: none;
+}
+#loader{
+  display: flex;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+}
+.navbar{
+  background-color: #fff!important;
+}
+.nav-link{
+  color: #000!important;
+}
+.nav-link::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width .2s ease;
+  position: relative;
+  display: block;
+}
+.nav-link:hover::after {
+  color: #acc!important;
+  width: 10%;
+}
+.navbar-toggler{
+  background-color: #212529!important;
+}
+.navbar-toggler-icon{
+  color: #000!important;
+}
+.col-sm-9{
+  margin: 0 auto 0 auto;
+  width: 30rem;
+  height: 30rem;
+  background-color: red;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.col-sm-9::-webkit-scrollbar{
+  display: none;
+}
+.col-sm-9 div{
+  min-width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  color: red;
+  border-radius: 30px;
+  scroll-snap-align: center;
+}
+.box1{
+  background-color: yellow;
+}
+.box2{
+  background-color: pink;
+}
+.box3{
+  background-color: green;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #aaa;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+nav > li {
+  color: gainsboro;
+}
+.ab {
+  background-image: url("https://stories.isu.pub/57061889/images/15_original_file_I0.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+.fakeimg {
+  height: 250px;
+  background: #aaa;
+}
+.bgimg,
+.bgimg2,
+.bgimg3 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg {
+  background-image: url("https://dwu32cgxelq1c.cloudfront.net/local_newspapers/sites/68/2017/07/ThavhaniMallentra_48528.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 530px;
+}
+.bgimg2 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/19/06/19/dubai-1050418_1280.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  width: auto;
+}
+.bgimg3 {
+  background-image: url("https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
+}
+.ls {
+  letter-spacing: 4px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.fsize {
+  font-size: 3.5em;
+}
+p {
+  font-size: 1.2em;
+}
+.fab {
+  font-size: 1.8em;
+}
+footer > .d-flex {
+  width: 30%;
+}
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1em;
+  }
+  .fsize {
+    font-size: 2.5em;
+  }
+  footer > .d-flex {
+    width: 50%;
+  }
+}
