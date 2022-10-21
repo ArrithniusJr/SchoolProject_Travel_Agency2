@@ -21,6 +21,9 @@ body::-webkit-scrollbar{
 }
 .navbar{
   background-color: #fff!important;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 .nav-link{
   color: #000!important;
@@ -120,6 +123,12 @@ body::-webkit-scrollbar{
   font-style: italic;
   color: #181818;
 }
+.re-re-name{
+  font-family: 'Times new roman';
+  font-size: 15px;
+  font-style: italic;
+  color: #181818;
+}
 .v-link{
   text-decoration: none;
 }
@@ -201,14 +210,72 @@ nav > li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+element.style {
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+@media only screen and (max-width: 480px)
+.fsize {
+    font-size: 2.5em;
+}
+.fsize {
+    font-size: 3.5em;
+}
+[data-aos=fade-right] {
+    transform: translate3d(-100px,0,0);
+}
+.text-white {
+    color: #fff!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+.pl-4, .px-4 {
+    padding-left: 1.5rem!important;
+}
+.pr-4, .px-4 {
+    padding-right: 1.5rem!important;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.border-white {
+    border-color: #fff!important;
+}
+.border {
+    border: 1px solid #dee2e6!important;
+}
+.miatt {
+    background-color: #545454ad!important;
+}
 .bgimg {
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/22/64/cd/a8/chesanyama.jpg");
+  background-image: url("../IMAGES/chocolate-sweet-food-photo-cream-cup-delicious-coffee-breakfast-strawberry-milk-vanilla.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 530px;
 }
 .bgimg2 {
-  background-image: url("https://cdn.pixabay.com/photo/2015/11/19/06/19/dubai-1050418_1280.jpg");
+  background-image: url("https://lh5.googleusercontent.com/p/AF1QipMX4gwjL0fQygfvCcpV1de2HZIuBOHuWuCil3o=w600-h988-p-k-no");
   background-attachment: fixed;
   background-size: cover;
   height: 600px;
@@ -231,6 +298,7 @@ nav > li {
 }
 p {
   font-size: 1.2em;
+  text-transform: capitalize;
 }
 .fab {
   font-size: 1.8em;
