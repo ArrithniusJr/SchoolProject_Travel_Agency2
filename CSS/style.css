@@ -132,6 +132,21 @@ body::-webkit-scrollbar{
 .v-link{
   text-decoration: none;
 }
+.centerthis{
+  display: flex;
+  margin: 0 auto 0 auto;
+  flex-direction: column;
+  border-radius: 15px;
+  justify-content: center;
+}
+.thiscard{
+  padding: 3px!important;
+  width: 41vh!important;
+  text-align: center;
+}
+.rated > .fa{
+  font-size: 15px;
+}
 .lds-ellipsis {
   display: inline-block;
   position: relative;
@@ -282,7 +297,7 @@ element.style {
   width: auto;
 }
 .bgimg3 {
-  background-image: url("https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg");
+  background-image: url("https://pbs.twimg.com/media/DaLxj7kXUAEjCz9.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 650px;
